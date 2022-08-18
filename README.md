@@ -4,7 +4,7 @@
 
 
 # Resource
-This repository contains a list of papers, codes, datasets, and leaderboards in Biomedical Text Summarisation based on PLM. If you found any errors, please don't hesitate to open an issue or pull a request.
+This repository contains a list of papers, codes, and datasets in Biomedical Text Summarisation based on PLM. If you found any errors, please don't hesitate to open an issue or pull a request.
 
 If you find this repository helpful for your work,  please consider citing our survey paper. The Bibtex are listed below:
 <pre>
@@ -24,22 +24,20 @@ pre-trained language models (PLMs) have been the de facto standard of various na
 domain. Most recently, PLMs have been further investigated in the biomedical domain and brought new insights into the biomedical text
 summarization task. 
 
-To help researchers quickly grasp the development in this task and point out the possible future directions, we line up available datasets, recent approaches and evaluation methods in this project.
+To help researchers quickly grasp the development in this task and inspire further research, we line up available datasets, recent approaches and evaluation methods in this project.
 
 At present, the project has been completely open source, including:
 
 1. **BioTS dataset table:** we listed the datasets in the BioTS field, You can find the category, size, content, and access of them in the table.
 2. **PLM Based BioTS Methods:** we classified and arranged papers based on the type of output summary, numbers and type of input documents. the current mainstream frontiers. Each line of the table contains the category, the strategy of applying PLM, the backbone model, the training type, and used datasets.
-3. **Leaderboard list on the mainstream datasets of BiomTS:** we sorted out the leaderboard on the mainstream datasets.
 
 The organization and our survey and the detailed background of biomedical text summarization are illustrated in the pictures below.
 
 
-![joint-compared-framework](./pics/Overview of biomedical text summarization with pre-trained language models.png)
+![joint-compared-framework](./pics/OverviewOfBiomedicalTextSummarizationWithPLM.png)
 
 
-
-![SLUs-taxonomy](./pics/Overview of background.png)
+![SLUs-taxonomy](./pics/TaxonomyOfMethods.png)
 
 
 ## Quick path
