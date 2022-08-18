@@ -14,7 +14,7 @@ If you find this repository helpful for your work,  please consider citing our s
 ## Contributor
 
 
-Resource Contributed by [Qianqian Xie](), [Tianbao Xie](https://github.com/Timothyxxx), [Zheheng Luo](),  [Jiamin Huang](), [Hua Wang](),[Sophia Ananiadou](https://www.research.manchester.ac.uk/portal/sophia.ananiadou.html).
+Resource Contributed by [Qianqian Xie](), [Zheheng Luo](),  [Jiamin Huang](), [Hua Wang](),[Sophia Ananiadou](https://www.research.manchester.ac.uk/portal/sophia.ananiadou.html).
 
 ## Introduction
 
@@ -27,6 +27,7 @@ summarization task.
 To help researchers quickly grasp the development in this task and point out the possible future directions, we line up available datasets, recent approaches and evaluation methods in this project.
 
 At present, the project has been completely open source, including:
+
 1. **SLU domain dataset sorting table:** we sorted out the dataset used in SLU field. You can index in it and get the message of general scale, basic structure, content, characteristics, source and acquisition method of the dataset you want to know.
 2. **Articles and infos in different directions in the field of SLU:** we classified and arranged the papers according to the current mainstream frontiers. Each line of the list contains not only the title of the paper, but also the year of publication, the source of publication, the paper link and code link for quick indexing, as well as the dataset used.
 3. **Leaderboard list on the mainstream datasets of SLU:** we sorted out the leaderboard on the mainstream datasets, and distinguished them according to pre-trained or not. In addition to the paper/model/method name and related scores, each line also has links to year, paper and code if it has.
