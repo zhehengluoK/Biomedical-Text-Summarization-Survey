@@ -163,7 +163,7 @@ The organization and our survey and the detailed background of biomedical text s
 <tbody >
 <tr>
 	<td><code><a href="https://arxiv.org/pdf/2007.03405.pdf"> ContinualBERT </a></td></code>
-		<td>Extractive</td>
+		<td>extractive</td>
 		<td> fine-tuning</td>
 		<td> BERT</td>
 		<td> supervised </td>
