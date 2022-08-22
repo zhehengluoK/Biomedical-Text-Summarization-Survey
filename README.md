@@ -6,10 +6,13 @@
 # Resource
 This repository contains a list of papers, codes, and datasets in Biomedical Text Summarisation based on PLM. If you found any errors, please don't hesitate to open an issue or pull a request.
 
+<!--
 If you find this repository helpful for your work,  please consider citing our survey paper. The Bibtex are listed below:
 <pre>
 
 </pre>
+-->
+
 
 ## Contributor
 
@@ -19,7 +22,7 @@ Resource Contributed by [Qianqian Xie](), [Zheheng Luo](),  [Jiamin Huang](), [H
 ## Introduction
 
 Biomedical text summarization has long been a fundamental task in biomedical natural language processing (BioNLP),
-aiming at generating concise summaries that distill key information from one or multiple biomedical documents. In recent years,
+aiming at generating concise summaries that distil key information from one or multiple biomedical documents. In recent years,
 pre-trained language models (PLMs) have been the de facto standard of various natural language processing tasks in the general
 domain. Most recently, PLMs have been further investigated in the biomedical domain and brought new insights into the biomedical text
 summarization task. 
@@ -30,90 +33,21 @@ At present, the project has been completely open source, including:
 
 1. **BioTS dataset table:** we listed the datasets in the BioTS field, You can find the category, size, content, and access of them in the table.
 2. **PLM Based BioTS Methods:** we classified and arranged papers based on the type of output summary, numbers and type of input documents. the current mainstream frontiers. Each line of the table contains the category, the strategy of applying PLM, the backbone model, the training type, and used datasets.
+3. **BioTS Evaluation:** we listed metrics that cover three essential aspects in the evaluation of biomedical text summarization: 1) relevancy 2) fluency 3) factuality.
 
 The organization and our survey and the detailed background of biomedical text summarization are illustrated in the pictures below.
 
 
-![joint-compared-framework](./pics/OverviewOfBiomedicalTextSummarizationWithPLM.png)
+![survey-overview](./pics/OverviewOfBiomedicalTextSummarizationWithPLM.png)
 
 
-![SLUs-taxonomy](./pics/TaxonomyOfMethods.png)
+![BTSwPLMs-taxonomy](./pics/TaxonomyOfMethods.png)
 
 
 ## Quick path
-- [Resources](#resources)
-  * [Abstractive Summarization](#Abstractive)
-  * [Extractive Summarization](#recent-open-sourced-code)
-  * [Multi-document Summarization](#single-model)
-  * [Medical conversation summarization](#joint-model)
-  * [Medical question summarization](#complex-slu-model)
 - [Dataset](#dataset)
-
-## Resources
-### Abstractive
-
-1. **Attend to Medical Ontologies: Content Selection for Clinical Abstractive Summarization** `ACL2020` [[pdf]](https://aclanthology.org/2020.acl-main.172.pdf)
-2. **Graph enhanced contrastive learning for radiology findings summarization** `ACL2022` [[pdf]](https://aclanthology.org/2022.acl-long.320.pdf)
-3. **Covidsum: A linguistically enriched scibert-based summarization model for covid-19 scientific papers**  `Journal of Biomedical
-Informatics` [[html]](https://pubmed.ncbi.nlm.nih.gov/35104642/) 
-4. **Abstractive summarization of hospitalisation histories with transformer**  `arxiv` [[pdf]](https://arxiv.org/pdf/2204.02208.pdf) 
-5. **MNLP at MEDIQA 2021: Fine-Tuning PEGASUS for Consumer Health Question Summarization** `ACL 2021 BioNLP` [[pdf]](https://aclanthology.org/2021.bionlp-1.37.pdf)
-6. **paht_nlp @ MEDIQA 2021: Multi-grained Query Focused Multi-Answer Summarization** `NAACL BioNLP 2021` [[pdf]](https://aclanthology.org/2021.bionlp-1.10.pdf)
-7. **Optum at MEDIQA 2021: Abstractive Summarization of Radiology Reports using simple BART Finetuning** `NAACL BioNLP 2021` [[pdf]](https://aclanthology.org/2021.bionlp-1.32.pdf)
-8. **BDKG at MEDIQA 2021: System Report for the Radiology Report Summarization Task** `NAACL BioNLP 2021` [[pdf]](https://aclanthology.org/2021.bionlp-1.11.pdf)
-9. **IBMResearch at MEDIQA 2021: Toward Improving Factual Correctness of Radiology Report Abstractive Summarization** `NAACL BioNLP 2021` [[pdf]](https://aclanthology.org/2021.bionlp-1.35.pdf)
-10. **damo_nlp at MEDIQA 2021: Knowledge-based Preprocessing and Coverage-oriented Reranking for Medical Question Summarization** `NAACL BioNLP 2021` [[pdf]](https://aclanthology.org/2021.bionlp-1.12.pdf)
-11. **COVID-19 information retrieval with deep-learning based semantic search, question answering, and abstractive summarization** `NPJ digital medicine` [[html]](https://www.nature.com/articles/s41746-021-00437-0)
-12. **Msˆ2: Multi-document summarization of medical studie** `EMNLP 2021` [[pdf]](https://aclanthology.org/2021.emnlp-main.594.pdf)
-13. **Generating (factual?) narrative summaries of rcts: Experiments with neural multi-document summarization** `AMIA Summits on Translational Science Proceedings` [[html]](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8378607/)
-14. **Medically Aware GPT-3 as a Data Generator for Medical Dialogue Summarization** `NAACL NLPMC 2021` [[pdf]](https://aclanthology.org/2021.nlpmc-1.9.pdf)
-15. **Leveraging Pretrained Models for Automatic Summarization of Doctor-Patient Conversations** `EMNLP findings` [[pdf]](https://aclanthology.org/2021.findings-emnlp.313.pdf)
-16. **Generating SOAP Notes from Doctor-Patient Conversations Using Modular Summarization Techniques** `ACL 2021` [[pdf]](https://aclanthology.org/2021.acl-long.384.pdf)
-17. **Few-shot fine-tuning SOTA summarization models for medical dialogues** `NAACL 2022` [[pdf]](https://aclanthology.org/2022.naacl-srw.32.pdf)
-18. **Biobart: Pretraining and evaluation of a biomedical generative language model** `ACL BioNLP` [[pdf]](https://aclanthology.org/2022.bionlp-1.9.pdf)
-19. **Reinforcement Learning for Abstractive Question Summarization with Question-aware Semantic Rewards** `ACL 2021` [[pdf]](https://aclanthology.org/2021.acl-short.33.pdf)
-20. **Question-aware transformer models for consumer health question summarization** `Journal of Biomedical Informatics` [[pdf]](https://arxiv.org/pdf/2106.00219.pdf)
-21. **A Gradually Soft Multi-Task and Data-Augmented Approach to Medical Question Understanding** `ACL 2021` [[pdf]](https://aclanthology.org/2021.acl-long.119.pdf)
-22. **** `` [[]]()
-23. **** `` [[]]()
-24. **** `` [[]]()
-25. **** `` [[]]()
-26. **** `` [[]]()
-
-### recent open-sourced code
-
-### Single Model
-
-1. **Few-shot Slot Tagging with  Collapsed Dependency Transfer and Label-enhanced Task-adaptive Projection  Network** (SNIPS) `ACL 2020` [[pdf]](https://www.aclweb.org/anthology/2020.acl-main.128.pdf) [[code]](https://github.com/AtmaHou/FewShotTagging) 
-2. **Sequence-to-Sequence Data  Augmentation for Dialogue Language Understanding** (ATIS/Stanford Dialogue Dataset) `COLING 2018` [[pdf]](https://arxiv.org/pdf/1807.01554.pdf) [[code]](https://github.com/AtmaHou/Seq2SeqDataAugmentationForLU) 
-
-### Joint Model
-
-1. **A Co-Interactive Transformer for Joint Slot Filling and Intent Detection**(ATIS/SNIPS) `ICASSP 2021` [[pdf]](https://arxiv.org/pdf/2010.03880.pdf) [[code]](https://github.com/kangbrilliant/DCA-Net)
-2. **SlotRefine: A Fast Non-Autoregressive Model for Joint Intent Detection and Slot Filling** (ATIS/SNIPS) `EMNLP 2020` [[pdf]](https://www.aclweb.org/anthology/2020.emnlp-main.152.pdf) [[code]](https://github.com/moore3930/SlotRefine)
-3. **Joint Slot Filling and Intent  Detection via Capsule Neural Networks** (ATIS/SNIPS) `ACL 2019` [[pdf]](https://arxiv.org/pdf/1812.09471.pdf) [[code]](https://github.com/czhang99/Capsule-NLU) 
-4. **BERT for Joint Intent  Classification and Slot Filling** (ATIS/SNIPS/Stanford Dialogue Dataset) `arXiv 2019` [[pdf]](https://arxiv.org/pdf/1902.10909.pdf) [[code]](https://github.com/monologg/JointBERT) 
-5. **A Novel Bi-directional  Interrelated Model for Joint Intent Detection and Slot Filling** (ATIS/Stanford Dialogue Dataset/SNIPS) `ACL 2019` [[pdf]](https://www.aclweb.org/anthology/P19-1544.pdf) [[code]](https://github.com/ZephyrChenzf/SF-ID-Network-For-NLU) 
-6. **CM-Net: A Novel Collaborative Memory Network for Spoken Language Understanding** (ATIS/SNIPS/CAIS) `EMNLP 2019` [[pdf]](https://www.aclweb.org/anthology/D19-1097.pdf) [[code]](https://github.com/Adaxry/CM-Net) 
-7. **Slot-Gated Modeling for Joint  Slot Filling and Intent Prediction** (ATIS/Stanford Dialogue Dataset,SNIPS) `NAACL 2018` [[pdf]](https://www.aclweb.org/anthology/N18-2118.pdf) [[code]](https://github.com/MiuLab/SlotGated-SLU) 
-8. **Joint Online Spoken Language  Understanding and Language Modeling with Recurrent Neural Networks** (ATIS) `SIGDIAL 2016` [[pdf]](https://www.aclweb.org/anthology/W16-3603.pdf) [[code]](https://github.com/HadoopIt/joint-slu-lm)
-
-### Complex SLU Model
-
-1. **How Time Matters: Learning Time-Decay Attention for Contextual Spoken Language Understanding in Dialogues** (DSTC4) `NAACL 2018` [[pdf]](https://www.aclweb.org/anthology/N18-1194.pdf) [[code]](https://github.com/MiuLab/Time-Decay-SLU) 
-2. **Speaker Role Contextual Modeling for Language Understanding and Dialogue Policy Learning** (DSTC4) `IJCNLP 2017` [[pdf]](https://www.aclweb.org/anthology/I17-2028.pdf) [[code]](https://github.com/MiuLab/Spk-Dialogue) 
-3. **Dynamic time-aware attention to speaker roles and contexts for spoken language understanding** (DSTC4) `IEEE 2017` [[pdf]](https://arxiv.org/pdf/1710.00165.pdf) [[code]](https://github.com/MiuLab/Time-SLU) 
-4. **Injecting Word Information with Multi-Level Word Adapter for Chinese Spoken Language Understanding** (CAIS/ECDT-NLU) `arXiv 2020` [[pdf]](https://arxiv.org/pdf/2010.03903.pdf) [[code]](https://github.com/AaronTengDeChuan/MLWA-Chinese-SLU) 
-5. **CM-Net: A Novel Collaborative Memory Network for Spoken Language Understanding** (ATIS/SNIPS/CAIS) `EMNLP 2019` [[pdf]](https://www.aclweb.org/anthology/D19-1097.pdf) [[code]](https://github.com/Adaxry/CM-Net) 
-6. **Coach: A Coarse-to-Fine  Approach for Cross-domain Slot Filling** (SNIPS) `ACL 2020` [[pdf]](https://arxiv.org/pdf/2004.11727.pdf) [[code]](https://github.com/zliucr/coach)
-7. **CoSDA-ML: Multi-Lingual  Code-Switching Data Augmentation for Zero-Shot Cross-Lingual NLP** (SC2/4/MLDoc/Multi WOZ/Facebook Multilingual SLU Dataset) `IJCAI 2020` [[pdf]](https://arxiv.org/pdf/2006.06402.pdf) [[code]](https://github.com/kodenii/CoSDA-ML) 
-8. **Cross-lingual Spoken Language  Understanding with Regularized Representation Alignment** (Multilingual spoken language understanding (SLU) dataset) `EMNLP 2020` [[pdf]](https://arxiv.org/pdf/2009.14510.pdf) [[code]](https://github.com/zliucr/crosslingual-slu.)
-9. **Attention-Informed  Mixed-Language Training for Zero-shot Cross-lingual Task-oriented Dialogue  Systems** (Facebook Multilingual SLU Dataset/(DST)MultiWOZ) `AAAI 2020` [[pdf]](https://arxiv.org/pdf/1911.09273.pdf) [[code]](https://github.com/zliucr/mixedlanguage-training) 
-10. **MTOP: A Comprehensive Multilingual Task-Oriented Semantic Parsing Benchmark** (MTOP/Multilingual ATIS) `arXiv 2020` [[pdf]](https://arxiv.org/pdf/2008.09335.pdf) [[code]]() 
-11. **Neural Architectures for  Multilingual Semantic Parsing** (GEO/ATIS) `ACL 2017` [[pdf]](https://www.aclweb.org/anthology/P17-2007.pdf) [[code]](http://statnlp.org/research/sp/) 
-12. **Few-shot Learning for Multi-label Intent Detection** (TourSG/StandfordLU) `AAAI 2021` [[pdf]](https://arxiv.org/abs/2010.05256.pdf) [[code]](https://github.com/AtmaHou/FewShotMultiLabel) 
-13. **Few-shot Slot Tagging with Collapsed Dependency Transfer and Label-enhanced Task-adaptive Projection Network** (SNIPS and further construct) `ACL 2020` [[pdf]](https://www.aclweb.org/anthology/2020.acl-main.128.pdf) [[code]](https://github.com/AtmaHou/FewShotTagging)
-
+- [Methods](#methods)
+- [Evaluation](#evaluation)
 
 ## Dataset
 <div style="overflow-x: auto; overflow-y: auto; height: auto; width:100%;">
@@ -213,6 +147,345 @@ Informatics` [[html]](https://pubmed.ncbi.nlm.nih.gov/35104642/)
 </div>
 
 
+## Methods
+<div style="overflow-x: auto; overflow-y: auto; height: auto; width:100%;">
+<table style="width:100%" border="2">
+<thead>
+  <tr>
+    <th>Paper</th>
+    <th>Category</th>
+    <th>Strategy</th>
+    <th>Model</th>
+    <th>Training</th>
+    <th>Dataset</th>
+  </tr>
+</thead>
+<tbody >
+<tr>
+	<td><code><a href="https://arxiv.org/pdf/2007.03405.pdf"> ContinualBERT </a></td></code>
+		<td>Extractive</td>
+		<td> fine-tuning</td>
+		<td> BERT</td>
+		<td> supervised </td>
+		<td> PubMed, CORD-19</td>
+
+<tr>
+	<td><code><a href="https://www.sciencedirect.com/science/article/abs/pii/S0950705120302859"> BioBERTSum </a> </td></code>
+		<td> extractive </td>
+		<td>fine-tuning </td>
+		<td> BioBERT</td>
+		<td> supervised </td>
+		<td> PubMed</td>
+<tr>
+	<td><code> <a href="https://www.sciencedirect.com/science/article/pii/S0950705122007328"> KeBioSum </a>                               </td></code>
+		<td> extractive </td>
+		<td> adaption+fine-tuning </td>
+		<td> PubMedBERT</td>
+		<td> supervised </td>
+		<td> PubMed, CORD-19, S2ORC</td>
+<tr>
+	<td><code>    <a href="	https://arxiv.org/pdf/2104.08942.pdf"> N. Kanwal and G. Rizzo</a>                              </td></code>
+		<td> extractive </td>
+		<td> fine-tuning </td>
+		<td> BERT</td>
+		<td> unsupervised </td>
+		<td> MIMIC-III</td>
+<tr>
+	<td><code>      <a href="https://www.researchgate.net/profile/Milad-Moradi-5/publication/336272974_Deep_contextualized_embeddings_for_quantifying_the_informative_content_in_biomedical_text_summarization/links/5d9c45d3a6fdccfd0e811d95/Deep-contextualized-embeddings-for-quantifying-the-informative-content-in-biomedical-text-summarization.pdf"> M. Moradi et.al   </a>                       </td></code>
+		<td> extractive </td>
+		<td> feature-base </td>
+		<td> BERT </td>
+		<td> unsupervised </td>
+		<td> PubMed</td>
+<tr>
+	<td><code>      <a href="https://www.sciencedirect.com/science/article/pii/S1532046420300800"> M. Moradi et.al</a>                   </td></code>
+		<td> extractive </td>
+		<td> feature-base</td>
+		<td> BioBERT</td>
+		<td> unsupervised </td>
+		<td> PubMed</td>
+<tr>
+	<td><code>  <a href="https://aclanthology.org/2022.bionlp-1.22/">   GenCompareSum    </a></td></code>
+		<td> extractive</td>
+		<td> feature-base</td>
+		<td> T5</td>
+		<td> unsupervised </td>
+		<td> PubMed, CORD-19, S2ORC</td>
+<tr>
+	<td><code> <a href="https://pubmed.ncbi.nlm.nih.gov/35923376/">   RadBERT    </a></td></code> </td></code>
+		<td> extractive</td>
+		<td> feature-base</td>
+		<td> RadBERT</td>
+		<td> unsupervised </td>
+		<td> - </td>
+<tr>                                                                                                                                                                                          
+        <td><code><a href="https://arxiv.org/pdf/2006.01997.pdf">   B Tan et.al  </a></td></code>                                                                                                                                 
+                <td>hybrid</td>                                                                                                                                                               
+                <td>adaption+fine-tuning</td>                                                                                                                                                 
+                <td>BERT,GPT-2</td>                                                                                                                                                           
+                <td>supervised</td>                                                                                                                                                           
+                <td>CORD-19</td>                                                                                                                                                              
+<tr>                                                                                                                                                                                          
+        <td><code> <a href="https://arxiv.org/pdf/2005.00163.pdf">S. S. Gharebagh et.al</a></td></code>                                                                                                                                  
+                <td>abstractive</td>                                                                                                                                                          
+                <td>feature-base</td>                                                                                                                                                         
+                <td>BERT</td>                                                                                                                                                                 
+                <td>supervised</td>                                                                                                                                                           
+                <td>MIMIC-CXR</td>                                                                                                                                                            
+<tr>                                                                                                                                                                                          
+        <td><code>  <a href="https://ojs.aaai.org/index.php/AAAI/article/view/16089/15896">Y. Guo et.al </a></td></code>                                                                                                                                     
+                <td>hybrid</td>                                                                                                                                                               
+                <td>adaption+fine-tuning</td>                                                                                                                                                 
+                <td>BERT, BART</td>                                                                                                                                                           
+                <td>supervised</td>                                                                                                                                                           
+                <td>CDSR</td>                                                                                                                                                                 
+<tr>                                                                                                                                                                                       
+        <td><code><a href="https://aclanthology.org/2021.bionlp-1.29/">L. Xu et.al </a></td></code>                                                                                                                                     
+                <td>abstractive,question</td>                                                                                                                                                 
+                <td>adaption+fine-tuning</td>                                                                                                                                                 
+                <td>BART,PEGASUS</td>                                                                                                                                                         
+                <td>supervised</td>                                                                                                                                                           
+                <td>MIMIC-CXR,OpenI,MeQSum</td>                                                                                                                                               
+<tr>                                                                                                                                                                                          
+        <td><code> <a href="https://aclanthology.org/2021.bionlp-1.10.pdf">W. Zhu et.al</a>   </td></code>
+                <td>abstractive</td>
+                <td>fine-tuning</td>
+                <td>BART,T5,PEGASUS</td>
+                <td>supervised</td>
+                <td>MIMIC-CXR,OpenI</td>
+<tr>
+        <td><code>  <a href="https://aclanthology.org/2021.bionlp-1.32.pdf"> R. Kondadadi et.al </a></td></code>
+                <td>abstractive</td>
+                <td>fine-tuning</td>
+                <td>BART,T5,PEGASUS</td>
+                <td>supervised</td>
+                <td>MIMIC-CXR,OpenI</td>
+<tr>
+        <td><code><a href="https://aclanthology.org/2021.bionlp-1.11.pdf">S. Dai et.al</a></td></code>
+                <td>abstractive</td>
+                <td>adaption+fine-tuning</td>
+                <td>PEGASUS</td>
+                <td>supervised</td>
+                <td>MIMIC-CXR,OpenI</td>
+<tr>
+        <td><code><a href="https://aclanthology.org/2021.bionlp-1.35.pdf">  D. Mahajan et.al</a></td></code>
+                <td>abstractive</td>
+                <td>adaption+fine-tuning</td>
+                <td><a href="https://aclanthology.org/2020.tacl-1.18/">BioRoBERTa</a></td>
+                <td>supervised</td>
+                <td>MIMIC-CXR,OpenI</td>
+<tr>
+        <td><code><a href="https://aclanthology.org/2022.acl-long.320.pdf">H. Jingpeng et.al </a></td></code>
+                <td>abstractive</td>
+                <td>fine-tuning</td>
+                <td>BioBERT</td>
+                <td>supervised</td>
+                <td>MIMIC-CXR,OpenI</td>
+<tr>
+        <td><code> <a href="https://www.sciencedirect.com/science/article/pii/S1532046422000156 ">X. Cai et.al </a></td></code>
+                <td>abstractive</td>
+                <td>fine-tuning</td>
+                <td>SciBERT</td>
+                <td>supervised</td>
+                <td>CORD-19</td>
+<tr>
+        <td><code>   <a href="https://arxiv.org/pdf/2204.02208"> A. Yalunin et.al </a></td></code>
+                <td>abstractive</td>
+                <td>adaption+fine-tuning</td>
+                <td>BERT,Longformer</td>
+                <td>supervised</td>
+                <td>-</td>
+<tr>
+        <td><code><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8378607/">  B. C. Wallace et.al</a></td></code>
+                <td>abstractive,multi-doc</td>
+                <td>adaption+fine-tuning</td>
+                <td>BART</td>
+                <td>supervised</td>
+                <td>RCT</td>
+<tr>
+        <td><code>   <a href="https://arxiv.org/pdf/2104.06486">  J. DeYoung et.al</a></td></code>
+                <td>abstractive,multi-doc</td>
+                <td>fine-tuning</td>
+                <td>BART,Longformer</td>
+                <td>supervised</td>
+                <td>MSˆ2</td>
+<tr>
+        <td><code>  <a href="https://www.nature.com/articles/s41746-021-00437-0">A. Esteva et.al </a></td></code>
+                <td>abstractive,multi-doc</td>
+                <td>fine-tuning</td>
+                <td>BERT,GPT-2</td>
+                <td>supervised</td>
+                <td>CORD-19</td>
+<tr>
+        <td><code><a href="https://aclanthology.org/2020.nlpcovid19-2.14.pdf">D. Su et.al </a></td></code> 
+                <td>hybrid,multi-doc</td>
+                <td>fine-tuning,feature-base</td>
+                <td>ALBERT,BART</td>
+                <td>un+supervised</td>
+                <td>CORD-19</td>
+<tr>
+        <td><code><a href="https://aclanthology.org/2020.coling-main.63.pdf">HET</a></td></code>
+                <td>extractive,dialogue</td>
+                <td>fine-tuning</td>
+                <td>BERT</td>
+                <td>supervised</td>
+                <td>HET-MC</td>
+<tr>
+        <td><code><a href="https://aclanthology.org/2021.acl-long.384.pdf">CLUSTER2SENT</td></code>
+                <td>abstractive,dialogue</td>
+                <td>fine-tuning</td>
+                <td>BERT,T5</td>
+                <td>supervised</td>
+                <td>-</td>
+<tr>
+        <td><code><a href="https://www.cs.cmu.edu/~mgormley/papers/zhang+al.emnlp.2021.pdf">L. Zhang et.al </a></td></code>
+                <td>abstractive,dialogue</td>
+                <td>fine-tuning</td>
+                <td>BART</td>
+                <td>supervised</td>
+                <td>-</td>
+<tr>
+        <td><code><a href='https://aclanthology.org/2021.nlpmc-1.9.pdf'>B. Chintagunt et.al</a></td></code>
+                <td>abstractive,dialogue</td>
+                <td>fine-tuning</td>
+                <td>GPT-3</td>
+                <td>supervised</td>
+                <td>-</td>
+<tr>
+        <td><code><a href='https://aclanthology.org/2022.naacl-srw.32.pdf'>  D. F. Navarro et.al</a></td></code>
+                <td>abstractive,dialogue</td>
+                <td>fine-tuning</td>
+                <td>BART,T5, PEGASUS</td>
+                <td>supervised</td>
+                <td>-</td>
+<tr>
+        <td><code><a href='https://aclanthology.org/2022.bionlp-1.9.pdf'>BioBART</a></td></code>
+                <td>abstractive,dialogue</td>
+                <td>fine-tuning</td>
+                <td>BioBART</td>
+                <td>supervised</td>
+                <td>-</td>
+<tr>
+        <td><code><a href='https://aclanthology.org/2021.bionlp-1.12.pdf'>Y. He et.al</a></td></code>
+                <td>abstractive,question</td>
+                <td>fine-tuning</td>
+                <td>BART,T5,PEGASUS</td>
+                <td>supervised</td>
+                <td>MeQSum,MIMIC-CXR,OpenI</td> 
+<tr>
+        <td><code><a href='https://aclanthology.org/2021.acl-short.33.pdf'>S. Yadav et.al</a></td></code>
+                <td>abstractive,question</td>
+                <td>fine-tuning</td>
+                <td>BERT,ProphetNet</td>
+                <td>supervised</td>
+                <td>MeQSum</td>
+<tr>
+        <td><code><a href='https://arxiv.org/pdf/2106.00219.pdf'>S. Yadav et.al</a></td></code>
+                <td>abstractive,question</td>
+                <td>adaption+fine-tuning</td>
+                <td><a href="https://proceedings.neurips.cc/paper/2020/hash/3f5ee243547dee91fbd053c1c4a845aa-Abstract.html">Minilm</a></td>
+                <td>supervised</td>
+                <td>MeQSum</td>
+<tr>
+        <td><code><a href='https://aclanthology.org/2021.acl-long.119.pdf'> K. Mrini et.al</a></td></code>
+                <td>abstractive,question</td>
+                <td>adaption+fine-tuning</td>
+                <td>BART,BioBERT</td>
+                <td>supervised</td>
+                <td>MeQSum</td>
+
+              
+</tbody >
+</table>
+</div>
+
+## Evaluation
+### Common metrics
+[ROUGE](https://aclanthology.org/W04-1013.pdf): 
+
+* ROUGE-N: N-gram overlap between generated summaries of summarizers and gold summaries(relevancy)
+* ROUGE-L: the longest common subsequences between generated summaries of summarizers and gold summaries(fluency)
+
+[BertScore](https://arxiv.org/pdf/1904.09675)
+
+### Factual Consistency
+
+Automatic:
+
+* [CheXbert](https://aclanthology.org/2020.emnlp-main.117/) check binary presence values of disease variables
+* [Jensen-Shannon Distance](https://github.com/allenai/ms2/) check directions(increase, decrease, no change)
+
+Human Involved
+
+* [Facts Counting](https://arxiv.org/pdf/2104.04412.pdf) 
+* [Correctness of PICO and direction](https://aclanthology.org/2022.acl-long.350/)
+
+
+<!--
+### Abstractive
+
+1. **Attend to Medical Ontologies: Content Selection for Clinical Abstractive Summarization** `ACL2020` [[pdf]](https://aclanthology.org/2020.acl-main.172.pdf)
+2. **Graph enhanced contrastive learning for radiology findings summarization** `ACL2022` [[pdf]](https://aclanthology.org/2022.acl-long.320.pdf)
+3. **Covidsum: A linguistically enriched scibert-based summarization model for covid-19 scientific papers**  `Journal of Biomedical
+Informatics` [[html]](https://pubmed.ncbi.nlm.nih.gov/35104642/) 
+4. **Abstractive summarization of hospitalisation histories with transformer**  `arxiv` [[pdf]](https://arxiv.org/pdf/2204.02208.pdf) 
+5. **MNLP at MEDIQA 2021: Fine-Tuning PEGASUS for Consumer Health Question Summarization** `ACL 2021 BioNLP` [[pdf]](https://aclanthology.org/2021.bionlp-1.37.pdf)
+6. **paht_nlp @ MEDIQA 2021: Multi-grained Query Focused Multi-Answer Summarization** `NAACL BioNLP 2021` [[pdf]](https://aclanthology.org/2021.bionlp-1.10.pdf)
+7. **Optum at MEDIQA 2021: Abstractive Summarization of Radiology Reports using simple BART Finetuning** `NAACL BioNLP 2021` [[pdf]](https://aclanthology.org/2021.bionlp-1.32.pdf)
+8. **BDKG at MEDIQA 2021: System Report for the Radiology Report Summarization Task** `NAACL BioNLP 2021` [[pdf]](https://aclanthology.org/2021.bionlp-1.11.pdf)
+9. **IBMResearch at MEDIQA 2021: Toward Improving Factual Correctness of Radiology Report Abstractive Summarization** `NAACL BioNLP 2021` [[pdf]](https://aclanthology.org/2021.bionlp-1.35.pdf)
+10. **damo_nlp at MEDIQA 2021: Knowledge-based Preprocessing and Coverage-oriented Reranking for Medical Question Summarization** `NAACL BioNLP 2021` [[pdf]](https://aclanthology.org/2021.bionlp-1.12.pdf)
+11. **COVID-19 information retrieval with deep-learning based semantic search, question answering, and abstractive summarization** `NPJ digital medicine` [[html]](https://www.nature.com/articles/s41746-021-00437-0)
+12. **Msˆ2: Multi-document summarization of medical studie** `EMNLP 2021` [[pdf]](https://aclanthology.org/2021.emnlp-main.594.pdf)
+13. **Generating (factual?) narrative summaries of rcts: Experiments with neural multi-document summarization** `AMIA Summits on Translational Science Proceedings` [[html]](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8378607/)
+14. **Medically Aware GPT-3 as a Data Generator for Medical Dialogue Summarization** `NAACL NLPMC 2021` [[pdf]](https://aclanthology.org/2021.nlpmc-1.9.pdf)
+15. **Leveraging Pretrained Models for Automatic Summarization of Doctor-Patient Conversations** `EMNLP findings` [[pdf]](https://aclanthology.org/2021.findings-emnlp.313.pdf)
+16. **Generating SOAP Notes from Doctor-Patient Conversations Using Modular Summarization Techniques** `ACL 2021` [[pdf]](https://aclanthology.org/2021.acl-long.384.pdf)
+17. **Few-shot fine-tuning SOTA summarization models for medical dialogues** `NAACL 2022` [[pdf]](https://aclanthology.org/2022.naacl-srw.32.pdf)
+18. **Biobart: Pretraining and evaluation of a biomedical generative language model** `ACL BioNLP` [[pdf]](https://aclanthology.org/2022.bionlp-1.9.pdf)
+19. **Reinforcement Learning for Abstractive Question Summarization with Question-aware Semantic Rewards** `ACL 2021` [[pdf]](https://aclanthology.org/2021.acl-short.33.pdf)
+20. **Question-aware transformer models for consumer health question summarization** `Journal of Biomedical Informatics` [[pdf]](https://arxiv.org/pdf/2106.00219.pdf)
+21. **A Gradually Soft Multi-Task and Data-Augmented Approach to Medical Question Understanding** `ACL 2021` [[pdf]](https://aclanthology.org/2021.acl-long.119.pdf)
+22.
+
+### Extractive Model
+
+1. **** `` [[]]()
+2. **** `` [[]]()
+3. **** `` [[]]()
+4. **** `` [[]]()
+5. 	**** `` [[]]()
+
+### Joint Model
+
+1. **A Co-Interactive Transformer for Joint Slot Filling and Intent Detection**(ATIS/SNIPS) `ICASSP 2021` [[pdf]](https://arxiv.org/pdf/2010.03880.pdf) [[code]](https://github.com/kangbrilliant/DCA-Net)
+2. **SlotRefine: A Fast Non-Autoregressive Model for Joint Intent Detection and Slot Filling** (ATIS/SNIPS) `EMNLP 2020` [[pdf]](https://www.aclweb.org/anthology/2020.emnlp-main.152.pdf) [[code]](https://github.com/moore3930/SlotRefine)
+3. **Joint Slot Filling and Intent  Detection via Capsule Neural Networks** (ATIS/SNIPS) `ACL 2019` [[pdf]](https://arxiv.org/pdf/1812.09471.pdf) [[code]](https://github.com/czhang99/Capsule-NLU) 
+4. **BERT for Joint Intent  Classification and Slot Filling** (ATIS/SNIPS/Stanford Dialogue Dataset) `arXiv 2019` [[pdf]](https://arxiv.org/pdf/1902.10909.pdf) [[code]](https://github.com/monologg/JointBERT) 
+5. **A Novel Bi-directional  Interrelated Model for Joint Intent Detection and Slot Filling** (ATIS/Stanford Dialogue Dataset/SNIPS) `ACL 2019` [[pdf]](https://www.aclweb.org/anthology/P19-1544.pdf) [[code]](https://github.com/ZephyrChenzf/SF-ID-Network-For-NLU) 
+6. **CM-Net: A Novel Collaborative Memory Network for Spoken Language Understanding** (ATIS/SNIPS/CAIS) `EMNLP 2019` [[pdf]](https://www.aclweb.org/anthology/D19-1097.pdf) [[code]](https://github.com/Adaxry/CM-Net) 
+7. **Slot-Gated Modeling for Joint  Slot Filling and Intent Prediction** (ATIS/Stanford Dialogue Dataset,SNIPS) `NAACL 2018` [[pdf]](https://www.aclweb.org/anthology/N18-2118.pdf) [[code]](https://github.com/MiuLab/SlotGated-SLU) 
+8. **Joint Online Spoken Language  Understanding and Language Modeling with Recurrent Neural Networks** (ATIS) `SIGDIAL 2016` [[pdf]](https://www.aclweb.org/anthology/W16-3603.pdf) [[code]](https://github.com/HadoopIt/joint-slu-lm)
+
+### Complex SLU Model
+
+1. **How Time Matters: Learning Time-Decay Attention for Contextual Spoken Language Understanding in Dialogues** (DSTC4) `NAACL 2018` [[pdf]](https://www.aclweb.org/anthology/N18-1194.pdf) [[code]](https://github.com/MiuLab/Time-Decay-SLU) 
+2. **Speaker Role Contextual Modeling for Language Understanding and Dialogue Policy Learning** (DSTC4) `IJCNLP 2017` [[pdf]](https://www.aclweb.org/anthology/I17-2028.pdf) [[code]](https://github.com/MiuLab/Spk-Dialogue) 
+3. **Dynamic time-aware attention to speaker roles and contexts for spoken language understanding** (DSTC4) `IEEE 2017` [[pdf]](https://arxiv.org/pdf/1710.00165.pdf) [[code]](https://github.com/MiuLab/Time-SLU) 
+4. **Injecting Word Information with Multi-Level Word Adapter for Chinese Spoken Language Understanding** (CAIS/ECDT-NLU) `arXiv 2020` [[pdf]](https://arxiv.org/pdf/2010.03903.pdf) [[code]](https://github.com/AaronTengDeChuan/MLWA-Chinese-SLU) 
+5. **CM-Net: A Novel Collaborative Memory Network for Spoken Language Understanding** (ATIS/SNIPS/CAIS) `EMNLP 2019` [[pdf]](https://www.aclweb.org/anthology/D19-1097.pdf) [[code]](https://github.com/Adaxry/CM-Net) 
+6. **Coach: A Coarse-to-Fine  Approach for Cross-domain Slot Filling** (SNIPS) `ACL 2020` [[pdf]](https://arxiv.org/pdf/2004.11727.pdf) [[code]](https://github.com/zliucr/coach)
+7. **CoSDA-ML: Multi-Lingual  Code-Switching Data Augmentation for Zero-Shot Cross-Lingual NLP** (SC2/4/MLDoc/Multi WOZ/Facebook Multilingual SLU Dataset) `IJCAI 2020` [[pdf]](https://arxiv.org/pdf/2006.06402.pdf) [[code]](https://github.com/kodenii/CoSDA-ML) 
+8. **Cross-lingual Spoken Language  Understanding with Regularized Representation Alignment** (Multilingual spoken language understanding (SLU) dataset) `EMNLP 2020` [[pdf]](https://arxiv.org/pdf/2009.14510.pdf) [[code]](https://github.com/zliucr/crosslingual-slu.)
+9. **Attention-Informed  Mixed-Language Training for Zero-shot Cross-lingual Task-oriented Dialogue  Systems** (Facebook Multilingual SLU Dataset/(DST)MultiWOZ) `AAAI 2020` [[pdf]](https://arxiv.org/pdf/1911.09273.pdf) [[code]](https://github.com/zliucr/mixedlanguage-training) 
+10. **MTOP: A Comprehensive Multilingual Task-Oriented Semantic Parsing Benchmark** (MTOP/Multilingual ATIS) `arXiv 2020` [[pdf]](https://arxiv.org/pdf/2008.09335.pdf) [[code]]() 
+11. **Neural Architectures for  Multilingual Semantic Parsing** (GEO/ATIS) `ACL 2017` [[pdf]](https://www.aclweb.org/anthology/P17-2007.pdf) [[code]](http://statnlp.org/research/sp/) 
+12. **Few-shot Learning for Multi-label Intent Detection** (TourSG/StandfordLU) `AAAI 2021` [[pdf]](https://arxiv.org/abs/2010.05256.pdf) [[code]](https://github.com/AtmaHou/FewShotMultiLabel) 
+13. **Few-shot Slot Tagging with Collapsed Dependency Transfer and Label-enhanced Task-adaptive Projection Network** (SNIPS and further construct) `ACL 2020` [[pdf]](https://www.aclweb.org/anthology/2020.acl-main.128.pdf) [[code]](https://github.com/AtmaHou/FewShotTagging)
+
+
+
+
 ## Frontiers
 
 ### Single Slot Filling
@@ -269,7 +542,7 @@ Informatics` [[html]](https://pubmed.ncbi.nlm.nih.gov/35104642/)
 9.  **JOINT SEMANTIC UTTERANCE  CLASSIFICATION AND SLOT FILLING WITH RECURSIVE NEURAL NETWORKS** (ATIS/Stanford Dialogue Dataset,Microsoft Cortana  conversational understanding task(-)) `IEEE SLT 2014` [[pdf]](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7078634) 
 10.  **CONVOLUTIONAL NEURAL NETWORK  BASED TRIANGULAR CRF FOR JOINT INTENT DETECTION AND SLOT FILLING** (ATIS) `IEEE Workshop on Automatic Speech Recognition and  Understanding 2013` [[pdf]](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=6707709) 
 
-#### Explicit joint modeling
+#### Explicit joint modelling
 
 1.	**A Result based Portable Framework for Spoken Language Understanding**(KVRET) `ICME 2021` [[pdf]](https://arxiv.org/pdf/2103.06010.pdf) 
 2.  **A Co-Interactive Transformer for Joint Slot Filling and Intent Detection**(ATIS/SNIPS) `ICASSP 2021` [[pdf]](https://arxiv.org/pdf/2010.03880.pdf) [[code]](https://github.com/kangbrilliant/DCA-Net)
@@ -387,7 +660,8 @@ Informatics` [[html]](https://pubmed.ncbi.nlm.nih.gov/35104642/)
 2. **Discovering New Intents with Deep Aligned Clustering** (Banking-77 / CLINC150) `AAAI 2021`  [[pdf]](https://arxiv.org/pdf/2012.08987.pdf) [[code]](https://github.com/thuiar/DeepAligned-Clustering)
 3. **Discovering New Intents via Constrained Deep Adaptive Clustering with Cluster Refinement** (SNIPS) `AAAI 2020`  [[pdf]](https://arxiv.org/pdf/1911.08891.pdf) [[code]](https://github.com/thuiar/CDAC-plus)
 4. **Dialogue State Induction Using Neural Latent Variable Models** (MultiWOZ 2.1/SGD) `IJCAI 2020`  [[pdf]](https://www.ijcai.org/proceedings/2020/0532.pdf)
-
+-->
+<!--
 ## LeaderBoard
 ### ATIS
 
@@ -1090,5 +1364,5 @@ Informatics` [[html]](https://pubmed.ncbi.nlm.nih.gov/35104642/)
 </tbody>
 </table>
 </div>
-
+-->
 
