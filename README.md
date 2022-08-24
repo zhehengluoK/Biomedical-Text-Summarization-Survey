@@ -17,7 +17,7 @@ If you find this repository helpful for your work,  please consider citing our s
 ## Contributor
 
 
-Resource Contributed by [Qianqian Xie](), [Zheheng Luo](),  [Jiamin Huang](), [Hua Wang](),[Sophia Ananiadou](https://www.research.manchester.ac.uk/portal/sophia.ananiadou.html).
+Resource Contributed by [Qianqian Xie](), [Zheheng Luo](),  [Benyou Wang](),[Sophia Ananiadou](https://www.research.manchester.ac.uk/portal/sophia.ananiadou.html).
 
 ## Introduction
 
@@ -45,9 +45,17 @@ The organization and our survey and the detailed background of biomedical text s
 
 
 ## Quick path
+- [Survey Paper](#survey-paper)
 - [Dataset](#dataset)
 - [Methods](#methods)
 - [Evaluation](#evaluation)
+- [Leading Board](#leadingboard)
+
+## Survey Paper
+1. **Text summarization in the biomedical domain: A systematic review of recent research** `J. biomedical informatics 2014` [[html]](https://www.sciencedirect.com/science/article/pii/S1532046414001476)
+1. **Summarization from medical documents: a survey** `Artif. intelligence medicine 2005` [[html]](https://www.sciencedirect.com/science/article/pii/S0933365704001320)
+1. **Automated methods for the summarization of electronic health records** `J Am Med Inform Assoc. 2015` [[html]](https://pubmed.ncbi.nlm.nih.gov/25882031/)
+1. **A systematic review of automatic text summarization for biomedical literature and ehrs** `J Am Med Inform Assoc. 2021` [[html]](https://pubmed.ncbi.nlm.nih.gov/34338801/)
 
 ## Dataset
 <div style="overflow-x: auto; overflow-y: auto; height: auto; width:100%;">
@@ -162,7 +170,7 @@ The organization and our survey and the detailed background of biomedical text s
 </thead>
 <tbody >
 <tr>
-	<td><code><a href="https://arxiv.org/pdf/2007.03405.pdf"> ContinualBERT </a></td></code>
+	<td><code><a href="https://arxiv.org/pdf/2007.03405.pdf"> ContinualBERT </a></code><a href="https://github.com/jdubpark/continual-bert"> [code] </a></td>
 		<td>extractive</td>
 		<td> fine-tuning</td>
 		<td> BERT</td>
@@ -177,35 +185,35 @@ The organization and our survey and the detailed background of biomedical text s
 		<td> supervised </td>
 		<td> PubMed</td>
 <tr>
-	<td><code> <a href="https://www.sciencedirect.com/science/article/pii/S0950705122007328"> KeBioSum </a>                               </td></code>
+	<td><code> <a href="https://www.sciencedirect.com/science/article/pii/S0950705122007328"> KeBioSum </a> </code> <a href="https://github.com/xashely/KeBioSum"> [code] </a> </td>
 		<td> extractive </td>
 		<td> adaption+fine-tuning </td>
 		<td> PubMedBERT</td>
 		<td> supervised </td>
 		<td> PubMed, CORD-19, S2ORC</td>
 <tr>
-	<td><code>    <a href="	https://arxiv.org/pdf/2104.08942.pdf"> N. Kanwal and G. Rizzo</a>                              </td></code>
+	<td><code>    <a href="	https://arxiv.org/pdf/2104.08942.pdf"> N. Kanwal and G. Rizzo</a></code> <a href="https://github.com/NeelKanwal/BERTOLOGY-Based-Extractive-Summarization-for-Clinical-Notes"> [code]</a></td>
 		<td> extractive </td>
 		<td> fine-tuning </td>
 		<td> BERT</td>
 		<td> unsupervised </td>
 		<td> MIMIC-III</td>
 <tr>
-	<td><code>      <a href="https://www.researchgate.net/profile/Milad-Moradi-5/publication/336272974_Deep_contextualized_embeddings_for_quantifying_the_informative_content_in_biomedical_text_summarization/links/5d9c45d3a6fdccfd0e811d95/Deep-contextualized-embeddings-for-quantifying-the-informative-content-in-biomedical-text-summarization.pdf"> M. Moradi et.al   </a>                       </td></code>
+	<td><code>      <a href="https://www.researchgate.net/profile/Milad-Moradi-5/publication/336272974_Deep_contextualized_embeddings_for_quantifying_the_informative_content_in_biomedical_text_summarization/links/5d9c45d3a6fdccfd0e811d95/Deep-contextualized-embeddings-for-quantifying-the-informative-content-in-biomedical-text-summarization.pdf"> M. Moradi et.al   </a></code> <a href="https://github.com/BioTextSumm/BERT-based-Summ"> [code]</a></td>
 		<td> extractive </td>
 		<td> feature-base </td>
 		<td> BERT </td>
 		<td> unsupervised </td>
 		<td> PubMed</td>
 <tr>
-	<td><code>      <a href="https://www.sciencedirect.com/science/article/pii/S1532046420300800"> M. Moradi et.al</a>                   </td></code>
+	<td><code>      <a href="https://www.sciencedirect.com/science/article/pii/S1532046420300800"> M. Moradi et.al</a> </code> <a href="https://github.com/BioTextSumm/Graph-basedSummarizer"> [code]</a></td>
 		<td> extractive </td>
 		<td> feature-base</td>
 		<td> BioBERT</td>
 		<td> unsupervised </td>
 		<td> PubMed</td>
 <tr>
-	<td><code>  <a href="https://aclanthology.org/2022.bionlp-1.22/">   GenCompareSum    </a></td></code>
+	<td><code>  <a href="https://aclanthology.org/2022.bionlp-1.22/">   GenCompareSum    </a></code> <a href="https://github.com/jbshp/GenCompareSum"> [code]</a></td>
 		<td> extractive</td>
 		<td> feature-base</td>
 		<td> T5</td>
@@ -219,7 +227,7 @@ The organization and our survey and the detailed background of biomedical text s
 		<td> unsupervised </td>
 		<td> - </td>
 <tr>                                                                                                                                                                                          
-        <td><code><a href="https://arxiv.org/pdf/2006.01997.pdf">   B Tan et.al  </a></td></code>                                                                                                                                 
+        <td><code><a href="https://arxiv.org/pdf/2006.01997.pdf">   B Tan et.al  </a></code> <a href="https://github.com/VincentK1991/BERT_summarization_1"> [code]</a></td>                                                                                                                               
                 <td>hybrid</td>                                                                                                                                                               
                 <td>adaption+fine-tuning</td>                                                                                                                                                 
                 <td>BERT,GPT-2</td>                                                                                                                                                           
@@ -233,7 +241,7 @@ The organization and our survey and the detailed background of biomedical text s
                 <td>supervised</td>                                                                                                                                                           
                 <td>MIMIC-CXR</td>                                                                                                                                                            
 <tr>                                                                                                                                                                                          
-        <td><code>  <a href="https://ojs.aaai.org/index.php/AAAI/article/view/16089/15896">Y. Guo et.al </a></td></code>                                                                                                                                     
+        <td><code>  <a href="https://ojs.aaai.org/index.php/AAAI/article/view/16089/15896">Y. Guo et.al </a> </code> <a href="https://github.com/qiuweipku/Plain_language_summarization "> [code]</a></td>                                                                                                                                                                                                                                                    
                 <td>hybrid</td>                                                                                                                                                               
                 <td>adaption+fine-tuning</td>                                                                                                                                                 
                 <td>BERT, BART</td>                                                                                                                                                           
@@ -275,8 +283,8 @@ The organization and our survey and the detailed background of biomedical text s
                 <td>supervised</td>
                 <td>MIMIC-CXR,OpenI</td>
 <tr>
-        <td><code><a href="https://aclanthology.org/2022.acl-long.320.pdf">H. Jingpeng et.al </a></td></code>
-                <td>abstractive</td>
+        <td><code><a href="https://aclanthology.org/2022.acl-long.320.pdf">H. Jingpeng et.al </a></code> <a href="https://github.com/jinpeng01/AIG_CL"> [code]</a></td>                   
+        		   <td>abstractive</td>
                 <td>fine-tuning</td>
                 <td>BioBERT</td>
                 <td>supervised</td>
@@ -296,14 +304,14 @@ The organization and our survey and the detailed background of biomedical text s
                 <td>supervised</td>
                 <td>-</td>
 <tr>
-        <td><code><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8378607/">  B. C. Wallace et.al</a></td></code>
+        <td><code><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8378607/">  B. C. Wallace et.al</a></code> <a href="https://github.com/bwallace/RCT-summarization-data"> [code]</a></td>           
                 <td>abstractive,multi-doc</td>
                 <td>adaption+fine-tuning</td>
                 <td>BART</td>
                 <td>supervised</td>
                 <td>RCT</td>
 <tr>
-        <td><code>   <a href="https://arxiv.org/pdf/2104.06486">  J. DeYoung et.al</a></td></code>
+        <td><code>   <a href="https://arxiv.org/pdf/2104.06486">  J. DeYoung et.al</a></code> <a href="https://github.com/allenai/ms2"> [code]</a></td> 
                 <td>abstractive,multi-doc</td>
                 <td>fine-tuning</td>
                 <td>BART,Longformer</td>
@@ -317,28 +325,28 @@ The organization and our survey and the detailed background of biomedical text s
                 <td>supervised</td>
                 <td>CORD-19</td>
 <tr>
-        <td><code><a href="https://aclanthology.org/2020.nlpcovid19-2.14.pdf">D. Su et.al </a></td></code> 
+        <td><code><a href="https://aclanthology.org/2020.nlpcovid19-2.14.pdf">CAiRE-COVID</a></code> <a href="https://github.com/HLTCHKUST/CAiRE-COVID"> [code]</a></td> 
                 <td>hybrid,multi-doc</td>
                 <td>fine-tuning,feature-base</td>
                 <td>ALBERT,BART</td>
                 <td>un+supervised</td>
                 <td>CORD-19</td>
 <tr>
-        <td><code><a href="https://aclanthology.org/2020.coling-main.63.pdf">HET</a></td></code>
+        <td><code><a href="https://aclanthology.org/2020.coling-main.63.pdf">HET</a></code> <a href="https://github.com/cuhksz-nlp/HET-MC"> [code]</a></td> 
                 <td>extractive,dialogue</td>
                 <td>fine-tuning</td>
                 <td>BERT</td>
                 <td>supervised</td>
                 <td>HET-MC</td>
 <tr>
-        <td><code><a href="https://aclanthology.org/2021.acl-long.384.pdf">CLUSTER2SENT</td></code>
+        <td><code><a href="https://aclanthology.org/2021.acl-long.384.pdf">CLUSTER2SENT</code> <a href="https://github.com/acmi-lab/modular-summarization"> [code]</a></td> 
                 <td>abstractive,dialogue</td>
                 <td>fine-tuning</td>
                 <td>BERT,T5</td>
                 <td>supervised</td>
                 <td>-</td>
 <tr>
-        <td><code><a href="https://www.cs.cmu.edu/~mgormley/papers/zhang+al.emnlp.2021.pdf">L. Zhang et.al </a></td></code>
+        <td><code><a href="https://www.cs.cmu.edu/~mgormley/papers/zhang+al.emnlp.2021.pdf">L. Zhang et.al </a> </code> <a href="https://github.com/negrinho/medical_conversation_summarization"> [code]</a></td> 
                 <td>abstractive,dialogue</td>
                 <td>fine-tuning</td>
                 <td>BART</td>
@@ -359,7 +367,7 @@ The organization and our survey and the detailed background of biomedical text s
                 <td>supervised</td>
                 <td>-</td>
 <tr>
-        <td><code><a href='https://aclanthology.org/2022.bionlp-1.9.pdf'>BioBART</a></td></code>
+        <td><code><a href='https://aclanthology.org/2022.bionlp-1.9.pdf'>BioBART</a></code> <a href="https://github.com/GanjinZero/BioBART"> [code]</a></td> 
                 <td>abstractive,dialogue</td>
                 <td>fine-tuning</td>
                 <td>BioBART</td>
@@ -387,7 +395,7 @@ The organization and our survey and the detailed background of biomedical text s
                 <td>supervised</td>
                 <td>MeQSum</td>
 <tr>
-        <td><code><a href='https://aclanthology.org/2021.acl-long.119.pdf'> K. Mrini et.al</a></td></code>
+        <td><code><a href='https://aclanthology.org/2021.acl-long.119.pdf'> K. Mrini et.al</a></code> <a href="https://github.com/KhalilMrini/">[code]</a></td> 
                 <td>abstractive,question</td>
                 <td>adaption+fine-tuning</td>
                 <td>BART,BioBERT</td>
@@ -422,6 +430,90 @@ Human Involved
 
 * [Facts Counting](https://arxiv.org/pdf/2104.04412.pdf) 
 * [Correctness of PICO and direction](https://aclanthology.org/2022.acl-long.350/)
+
+## Leading Board
+### Pubmed
+<div style="overflow-x: auto; overflow-y: auto; height: auto; width:100%;">
+<table style="width:100%" border="2">
+<thead>
+  <tr>
+    <th> Model</th>
+    <th>ROUGE-1</th>
+    <th>ROUGE-2</th>
+    <th>ROUGE-L</th>
+    <th>Paper / Source</th>
+    <th>Code link</th>
+    <th>Conference</th>
+  </tr>
+</thead>
+<tbody >
+<tr>
+	<td><code> Co-Interactive(Qin et al., 2021)                         </td></code>
+		<td> 98.0       </td>
+		<td> 96.1    </td>
+		<td> A Co-Interactive Transformer for Joint Slot Filling and Intent Detection  [[pdf]](https://arxiv.org/pdf/2010.03880.pdf) </td>
+		<td> https://github.com/kangbrilliant/DCA-Net      </td>
+		<td> ICASSP  </td>
+		<td></td>
+</tr>
+<tr>
+	<td><code> Stack  Propagation+BERT(Qin et al., 2019)   </td></code>
+		<td> 97.5       </td>
+		<td> 96.1    </td>
+		<td> A   Stack-Propagation Framework with Token-Level Intent Detection for Spoken   Language Understanding [[pdf]](https://arxiv.org/pdf/1909.02188.pdf) </td>
+		<td> https://github.com/LeePleased/StackPropagation-SLU    </td>
+		<td> EMNLP      </td>
+		<td></td>
+</tr>
+<tr>
+	<td><code> Bert-Joint(Castellucci  et al., 2019)       </td></code>
+		<td> 97.8       </td>
+		<td> 95.7    </td>
+		<td> Multi-lingual  Intent Detection and Slot Filling in a Joint BERT-based Model [[pdf]](https://arxiv.org/pdf/1907.02884.pdf) </td>
+		<td> -                                                     </td>
+		<td> arXiv      </td>
+		<td></td>
+</tr>
+<tr>
+	<td><code> BERT-SLU(Zhang  et al., 2019)               </td></code>
+		<td> 99.76      </td>
+		<td> 98.75   </td>
+		<td> A Joint   Learning Framework With BERT for Spoken Language Understanding [[pdf]](https://ieeexplore.ieee.org/document/8907842) </td>
+		<td> -                                                     </td>
+		<td> IEEE       </td>
+		<td></td>
+</tr>
+<tr>
+	<td><code> Joint  BERT(Chen et al., 2019)              </td></code>
+		<td> 97.5       </td>
+		<td> 96.1    </td>
+		<td> BERT for Joint   Intent Classification and Slot Filling [[pdf]](https://arxiv.org/pdf/1902.10909.pdf) </td>
+		<td> https://github.com/monologg/JointBERT                 </td>
+		<td> arXiv      </td>
+		<td></td>
+</tr>
+<tr>
+	<td><code> Joint  BERT+CRF(Chen et al., 2019)          </td></code>
+		<td> 97.9       </td>
+		<td> 96      </td>
+		<td> BERT for Joint   Intent Classification and Slot Filling [[pdf]](https://arxiv.org/pdf/1902.10909.pdf) </td>
+		<td> https://github.com/monologg/JointBERT                 </td>
+		<td> arXiv      </td>
+		<td></td>
+</tr>
+<tr>
+	<td><code> ELMo-Light  (ELMoL) (Siddhant et al., 2019) </td></code>
+		<td> 97.3       </td>
+		<td> 95.42   </td>
+		<td> Unsupervised   Transfer Learning for Spoken Language Understanding in Intelligent Agents [[pdf]](https://arxiv.org/pdf/1811.05370.pdf) </td>
+		<td> -                                                     </td>
+		<td> AAAI       </td>
+		<td></td>
+</tr>
+</tbody >
+</table>
+</div>
+
 
 
 <!--
