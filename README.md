@@ -438,13 +438,13 @@ Human Involved
 <table style="width:100%" border="2">
 <thead>
   <tr>
-    <th> Model</th>
+    <th>Model</th>
     <th>ROUGE-1</th>
     <th>ROUGE-2</th>
     <th>ROUGE-L</th>
-    <th>Paper / Source</th>
-    <th>Code link</th>
-    <th>Conference</th>
+    <th>Paper</th>
+    <th>Code Like</th>
+    <th>Source</th>
   </tr>
 </thead>
 <tbody >
@@ -453,9 +453,91 @@ Human Involved
 		<td> 51.05       </td>
 		<td> 23.26    </td>
 		<td> 46.47 </td>
-		<td> Long Document Summarization with Top-down and Bottom-up Inference  [[pdf]](https://arxiv.org/pdf/2203.07586v1.pdf) </td>
+		<td> Long Document Summarization with Top-down and Bottom-up Inference (https://arxiv.org/pdf/2203.07586v1.pdf) </td>
 		<td> https://github.com/kangbrilliant/DCA-Net      </td>
-		<td></td>
+		<td>arxiv</td>
+</tr>
+<tr>
+	<td><code> LongT5                   </td></code>
+		<td> 50.23       </td>
+		<td> 24.76    </td>
+		<td> 46.67 </td>
+		<td> LongT5: Efficient Text-To-Text Transformer for Long Sequences (https://arxiv.org/pdf/2112.07916v2.pdf) </td>
+		<td> https://github.com/google-research/longt5      </td>
+		<td>NAACL</td>
+</tr>
+<tr>
+	<td><code>MemSum (extractive)                   </td></code>
+		<td> 49.25	       </td>
+		<td> 22.94    </td>
+		<td> 44.42 </td>
+		<td> MemSum: Extractive Summarization of Long Documents Using Multi-Step Episodic Markov Decision Processes(https://arxiv.org/pdf/2107.08929v2.pdf) </td>
+		<td> https://github.com/nianlonggu/memsum     </td>
+		<td>ACL</td>
+</tr>
+<tr>
+	<td><code> HAT-BART                 </td></code>
+		<td> 48.25       </td>
+		<td> 21.35 </td>
+		<td> 36.69 </td>
+		<td> Hierarchical Learning for Generation with Long Source Sequences(https://arxiv.org/pdf/2104.07545v2.pdf) </td>
+		<td>      </td>
+		<td>arxiv</td>
+</tr>
+<tr>
+	<td><code> 	DeepPyramidion                    </td></code>
+		<td> 47.81       </td>
+		<td> 21.14    </td>
+		<td> 46.47 </td>
+		<td> Sparsifying Transformer Models with Trainable Representation Pooling
+(https://aclanthology.org/2022.acl-long.590.pdf) </td>
+		<td> https://github.com/applicaai/pyramidions      </td>
+		<td><acl/td>
+</tr>
+<tr>
+	<td><code> 	HiStruct+                   </td></code>
+		<td> 46.59       </td>
+		<td> 20.39    </td>
+		<td> 42.11 </td>
+		<td> HiStruct+: Improving Extractive Text Summarization with Hierarchical Structure Information(https://aclanthology.org/2022.findings-acl.102.pdf) </td>
+		<td>       </td>
+		<td>acl</td>
+</tr>
+<tr>
+	<td><code> DANCER PEGASUS                    </td></code>
+		<td> 46.34       </td>
+		<td> 19.97    </td>
+		<td> 42.42 </td>
+		<td> A Divide-and-Conquer Approach to the Summarization of Long Documents[[pdf]](https://arxiv.org/pdf/2004.06190v3.pdf) </td>
+		<td> https://github.com/AlexGidiotis/DANCER-summ      </td>
+		<td>IEEE/ACM Transactions on Audio Speech and Language Processing</td>
+</tr>
+<tr>
+	<td><code> 	BigBird-Pegasus                     </td></code>
+		<td> 46.32       </td>
+		<td> 20.65    </td>
+		<td> 42.33 </td>
+		<td> Big Bird: Transformers for Longer Sequences(https://arxiv.org/pdf/2007.14062v2.pdf) </td>
+		<td> https://github.com/google-research/bigbird      </td>
+		<td>NeuralIPS</td>
+</tr>
+<tr>
+	<td><code> ExtSum-LG+MMR-Select+                    </td></code>
+		<td> 45.39       </td>
+		<td> 20.37    </td>
+		<td> 40.99 </td>
+		<td> Systematically Exploring Redundancy Reduction in Summarizing Long Documents(https://arxiv.org/pdf/2012.00052v1.pdf) </td>
+		<td> https://github.com/Wendy-Xiao/redundancy_reduction_longdoc     </td>
+		<td>AACL</td>
+</tr>
+<tr>
+	<td><code> 	ExtSum-LG+RdLoss                 </td></code>
+		<td> 45.3       </td>
+		<td> 20.42    </td>
+		<td> 40.95 </td>
+		<td> Systematically Exploring Redundancy Reduction in Summarizing Long Documents(https://arxiv.org/pdf/2012.00052v1.pdf) </td>
+		<td> https://github.com/Wendy-Xiao/redundancy_reduction_longdoc     </td>
+		<td>AACL</td>
 </tr>
 </tbody >
 </table>
