@@ -663,7 +663,7 @@ to Medical Question Understanding (https://aclanthology.org/2021.acl-long.119.pd
 		<td> 45.20       </td>
 		<td> 28.38    </td>
 		<td> 48.76 </td>
-		<td> PQuestion-aware Transformer Models for Consumer
+		<td> Question-aware Transformer Models for Consumer
 Health Question Summarization (https://arxiv.org/pdf/2106.00219.pdf) </td>
 		<td>       </td>
 		<td>  J. Biomed. Informatics</td>
@@ -693,7 +693,7 @@ Question-aware Semantic Rewards (https://aclanthology.org/2021.acl-short.33.pdf)
 		<td> 44.58      </td>
 		<td> 27.02   </td>
 		<td> 47.81 </td>
-		<td> AQuestion-aware Transformer Models for Consumer
+		<td> Question-aware Transformer Models for Consumer
 Health Question Summarization (https://arxiv.org/pdf/2106.00219.pdf) </td>
 		<td>       </td>
 		<td> J. Biomed. Informatics </td>
