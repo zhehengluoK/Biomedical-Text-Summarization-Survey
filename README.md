@@ -619,7 +619,7 @@ Reports with Abstractive Text Summarization (https://web.stanford.edu/class/cs22
 		<td> Stanford CS224N </td>
 </tr>
 <tr>
-	<td><code> DAMEN            </td></code>
+	<td><code> Attend to Medical Ontologies            </td></code>
 		<td> 53.57       </td>
 		<td> 40.78    </td>
 		<td> 51.81 </td>
