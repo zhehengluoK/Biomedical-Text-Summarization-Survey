@@ -433,6 +433,7 @@ Human Involved
 
 ## Leading Board
 ### Pubmed
+
 <div style="overflow-x: auto; overflow-y: auto; height: auto; width:100%;">
 <table style="width:100%" border="2">
 <thead>
@@ -448,66 +449,12 @@ Human Involved
 </thead>
 <tbody >
 <tr>
-	<td><code> Co-Interactive(Qin et al., 2021)                         </td></code>
-		<td> 98.0       </td>
-		<td> 96.1    </td>
-		<td> A Co-Interactive Transformer for Joint Slot Filling and Intent Detection  [[pdf]](https://arxiv.org/pdf/2010.03880.pdf) </td>
+	<td><code> Top Down Transformer(AdaPool)                     </td></code>
+		<td> 51.05       </td>
+		<td> 23.26    </td>
+		<td> 46.47 </td>
+		<td> Long Document Summarization with Top-down and Bottom-up Inference  [[pdf]](https://arxiv.org/pdf/2203.07586v1.pdf) </td>
 		<td> https://github.com/kangbrilliant/DCA-Net      </td>
-		<td> ICASSP  </td>
-		<td></td>
-</tr>
-<tr>
-	<td><code> Stack  Propagation+BERT(Qin et al., 2019)   </td></code>
-		<td> 97.5       </td>
-		<td> 96.1    </td>
-		<td> A   Stack-Propagation Framework with Token-Level Intent Detection for Spoken   Language Understanding [[pdf]](https://arxiv.org/pdf/1909.02188.pdf) </td>
-		<td> https://github.com/LeePleased/StackPropagation-SLU    </td>
-		<td> EMNLP      </td>
-		<td></td>
-</tr>
-<tr>
-	<td><code> Bert-Joint(Castellucci  et al., 2019)       </td></code>
-		<td> 97.8       </td>
-		<td> 95.7    </td>
-		<td> Multi-lingual  Intent Detection and Slot Filling in a Joint BERT-based Model [[pdf]](https://arxiv.org/pdf/1907.02884.pdf) </td>
-		<td> -                                                     </td>
-		<td> arXiv      </td>
-		<td></td>
-</tr>
-<tr>
-	<td><code> BERT-SLU(Zhang  et al., 2019)               </td></code>
-		<td> 99.76      </td>
-		<td> 98.75   </td>
-		<td> A Joint   Learning Framework With BERT for Spoken Language Understanding [[pdf]](https://ieeexplore.ieee.org/document/8907842) </td>
-		<td> -                                                     </td>
-		<td> IEEE       </td>
-		<td></td>
-</tr>
-<tr>
-	<td><code> Joint  BERT(Chen et al., 2019)              </td></code>
-		<td> 97.5       </td>
-		<td> 96.1    </td>
-		<td> BERT for Joint   Intent Classification and Slot Filling [[pdf]](https://arxiv.org/pdf/1902.10909.pdf) </td>
-		<td> https://github.com/monologg/JointBERT                 </td>
-		<td> arXiv      </td>
-		<td></td>
-</tr>
-<tr>
-	<td><code> Joint  BERT+CRF(Chen et al., 2019)          </td></code>
-		<td> 97.9       </td>
-		<td> 96      </td>
-		<td> BERT for Joint   Intent Classification and Slot Filling [[pdf]](https://arxiv.org/pdf/1902.10909.pdf) </td>
-		<td> https://github.com/monologg/JointBERT                 </td>
-		<td> arXiv      </td>
-		<td></td>
-</tr>
-<tr>
-	<td><code> ELMo-Light  (ELMoL) (Siddhant et al., 2019) </td></code>
-		<td> 97.3       </td>
-		<td> 95.42   </td>
-		<td> Unsupervised   Transfer Learning for Spoken Language Understanding in Intelligent Agents [[pdf]](https://arxiv.org/pdf/1811.05370.pdf) </td>
-		<td> -                                                     </td>
-		<td> AAAI       </td>
 		<td></td>
 </tr>
 </tbody >
