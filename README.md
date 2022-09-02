@@ -1,4 +1,4 @@
-# A Survey on Biomedical Text Summarisation with Pre-trained Language Model(PLM)s
+# A Survey on Biomedical Text Summarisation with Pre-trained Language Model (PLMs）
 
 ![](https://img.shields.io/badge/Status-building-brightgreen) ![](https://img.shields.io/badge/PRs-Welcome-red) 
 
