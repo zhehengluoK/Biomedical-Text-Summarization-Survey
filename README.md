@@ -99,7 +99,7 @@ The organization and our survey and the detailed background of biomedical text s
 		<td> 7,805 </td>
 		<td> Abstracts of articles</td>
 		<td> Single </td>
-		<td> <a href="https://github.com/qiuweipku/Plain language summarization">https://github.com/qiuweipku/Plain language summarization</a></td>
+		<td> <a href="https://github.com/qiuweipku/Plain_language_summarization">hhttps://github.com/qiuweipku/Plain_language_summarization</a></td>
 <tr>
 	<td><code> SumPubMed                               </td></code>
 		<td> Biomedical literature </td>
