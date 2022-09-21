@@ -124,7 +124,7 @@ The organization and our survey and the detailed background of biomedical text s
 <tr>
 	<td><code> MIMIC-CXR                              </td></code>
 		<td> EHR</td>
-		<td> 124577</td>
+		<td> 227,835</td>
 		<td> Full contents of reports</td>
 		<td> Single </td>
 		<td> <a href="https://physionet.org/content/mimic-cxr/2.0.0/">https://physionet.org/content/mimic-cxr/2.0.0/</a></td>
