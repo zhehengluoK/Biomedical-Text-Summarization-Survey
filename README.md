@@ -38,10 +38,10 @@ At present, the project has been completely open source, including:
 The organization and our survey and the detailed background of biomedical text summarization are illustrated in the pictures below.
 
 
-![survey-overview](./pics/OverviewOfBiomedicalTextSummarizationWithPLM.png)
+![survey-overview](./pics/OverviewOfBiomedicalTextSummarizationWithPLM2.png)
 
 
-![BTSwPLMs-taxonomy](./pics/TaxonomyOfMethods.png)
+![BTSwPLMs-background](./pics/Overviewofbackground2.png)
 
 
 ## Quick path
@@ -56,6 +56,8 @@ The organization and our survey and the detailed background of biomedical text s
 1. **Summarization from medical documents: a survey** `Artif. intelligence medicine 2005` [[html]](https://www.sciencedirect.com/science/article/pii/S0933365704001320)
 1. **Automated methods for the summarization of electronic health records** `J Am Med Inform Assoc. 2015` [[html]](https://pubmed.ncbi.nlm.nih.gov/25882031/)
 1. **A systematic review of automatic text summarization for biomedical literature and ehrs** `J Am Med Inform Assoc. 2021` [[html]](https://pubmed.ncbi.nlm.nih.gov/34338801/)
+
+![BTSwPLMs-Dataset](./pics/TaxonomyofDatasets.png)
 
 ## Dataset
 <div style="overflow-x: auto; overflow-y: auto; height: auto; width:100%;">
